@@ -28,7 +28,7 @@ struct CBlockIndexWorkComparator;
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;                      // 1000KB block hard limit
 /** Obsolete: maximum size for mined blocks */
-static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/4;         // 250KB  block soft limit
+static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;         // 500KB  block soft limit
 /** Default for -blockmaxsize, maximum size for mined blocks **/
 static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 250000;
 /** Default for -blockprioritysize, maximum space for zero/low-fee transactions **/
@@ -54,12 +54,14 @@ static const int64 DUST_SOFT_LIMIT = 100000; // 0.001 EAC
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
 static const int64 DUST_HARD_LIMIT = 1000;   // 0.00001 EAC mininput
 /** No amount larger than this (in satoshi) is valid */
-static const int64 MAX_MONEY = 84000000 * COIN;
+static const int64 MAX_MONEY = 13500000000LL * COIN;
+static const int64 TOTAL_GENERATION = MAX_MONEY;
+static const double SERVICE_TAX_PERCENTAGE = 0.02;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Number bytes a transaction comment is allowed to have */
 static const unsigned int MAX_TX_COMMENT_LEN = 140; // 128 bytes + little extra
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int COINBASE_MATURITY = 100;
+static const int COINBASE_MATURITY = 30;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */
@@ -82,6 +84,8 @@ extern CCriticalSection cs_main;
 extern std::map<uint256, CBlockIndex*> mapBlockIndex;
 extern std::set<CBlockIndex*, CBlockIndexWorkComparator> setBlockIndexValid;
 extern uint256 hashGenesisBlock;
+extern uint256 hashGenesisBlockPoW;
+extern uint256 hashGenesisBlockMerkleRoot;
 extern CBlockIndex* pindexGenesisBlock;
 extern int nBestHeight;
 extern uint256 nBestChainWork;
@@ -635,7 +639,7 @@ public:
     {
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
-        return dPriority > COIN * 576 / 250;
+        return dPriority > COIN * 1440 / 250; // EarthCoin: 1440 blocks found a day. Priority cutoff is 1 earthcoin day / 250 bytes.
     }
 
 // Apply the effects of this transaction on the UTXO set represented by view
@@ -1503,7 +1507,12 @@ public:
 
         // Check the header
         if (!CheckProofOfWork(GetPoWHash(), nBits))
+        {
+          if (GetHash() == hashGenesisBlock && GetPoWHash() == hashGenesisBlockPoW)
+            ; // nevermind, genesis block follows different rules
+          else
             return error("CBlock::ReadFromDisk() : errors in block header");
+        }
 
         return true;
     }

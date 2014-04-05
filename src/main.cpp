@@ -36,7 +36,9 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2");
+uint256 hashGenesisBlock("0x21717d4df403301c0538f1cb9af718e483ad06728bbcd8cc6c9511e2f9146ced");
+uint256 hashGenesisBlockPoW("0x31e387abfb59b8a3c91959f9efd81a50827e8734efde39a06f968d8fea169889");
+uint256 hashGenesisBlockMerkleRoot("0x13757c3610411891452ac1f04d7f81946339b0e5b5aba216e6646e81805c4bb1");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // EarthCoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -52,11 +54,12 @@ bool fReindex = false;
 bool fBenchmark = false;
 bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
+int64 nMinSubsidy = 1 * COIN;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64 CTransaction::nMinTxFee = 100000;
+int64 CTransaction::nMinTxFee = 1000000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-int64 CTransaction::nMinRelayTxFee = 100000;
+int64 CTransaction::nMinRelayTxFee = 1000000;
 
 CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -1091,16 +1094,76 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
+  // base payout
+  int64 nSubsidy = 10000 * COIN;
 
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // EarthCoin: 840k blocks in ~4 years
-
+  // first block receives 2% premine to support EarthCoin
+  if (nHeight == 1)
+  {
+    nSubsidy = TOTAL_GENERATION * SERVICE_TAX_PERCENTAGE;
     return nSubsidy + nFees;
+  }
+
+  // relative height inside main period (approx. 1 year)
+  int nHeightM = nHeight % 525600;
+  double phase = ((double)nHeightM) / 525600.0 * 2.0 * M_PI;
+
+  // modify base payout with seasonal effect
+  nSubsidy += ((int)(2000.0 * sin(phase))) * COIN;
+
+  // bonus zones
+
+  // get number of days since the inception of EarthCoin
+  int day = nHeight / 1440 + 1;
+
+  // regular bonus zones
+
+  // every 31 days, payout is increased by a factor of 5
+  if (day % 31 == 0)
+  {
+    nSubsidy *= 5;
+  }
+  else
+  // every 14 days, payout is increased by a factor of 2
+  if (day % 14 == 0)
+  {
+    nSubsidy *= 2;
+  }
+
+  // special bonus zones
+
+  // the first three days were special (approx. 12/21-21/24 in the year of 2013)
+  switch (day) {
+  // 5 times the normal payout on day 1
+  case 1:
+    nSubsidy *= 5;
+    break;
+  // 3 times the normal payout on day 2
+  case 2:
+    nSubsidy *= 3;
+    break;
+  // 2 times the normal payout on day 3
+  case 3:
+    nSubsidy *= 2;
+    break;
+  }
+
+  // subsidy is cut in half every 525600 blocks,
+  // which will occur approximately every 12 months
+  nSubsidy >>= (nHeight / 525600);
+
+  // nevertheless, there will a minimum payout of 1 EarthCoin
+  if (nSubsidy < nMinSubsidy)
+  {
+    nSubsidy = nMinSubsidy;
+  }
+
+  // final payout includes all fees
+  return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 3.5 * 24 * 60 * 60; // EarthCoin: 3.5 days
-static const int64 nTargetSpacing = 2.5 * 60; // EarthCoin: 2.5 minutes
+static const int64 nTargetTimespan = 30 * 60; // EarthCoin: every 30 minutes
+static const int64 nTargetSpacing = 60; // EarthCoin: 60 sec
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1136,63 +1199,32 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
 
-    // Only change once per interval
-    if ((pindexLast->nHeight+1) % nInterval != 0)
-    {
-        // Special difficulty rule for testnet:
-        if (fTestNet)
-        {
-            // If the new block's timestamp is more than 2* 10 minutes
-            // then allow mining of a min-difficulty block.
-            if (pblock->nTime > pindexLast->nTime + nTargetSpacing*2)
-                return nProofOfWorkLimit;
-            else
-            {
-                // Return the last non-special-min-difficulty-rules-block
-                const CBlockIndex* pindex = pindexLast;
-                while (pindex->pprev && pindex->nHeight % nInterval != 0 && pindex->nBits == nProofOfWorkLimit)
-                    pindex = pindex->pprev;
-                return pindex->nBits;
-            }
-        }
+    // 1st block
+    if (pindexLast->pprev == NULL)
+      return nProofOfWorkLimit;
 
-        return pindexLast->nBits;
-    }
+    // 2nd block
+    if (pindexLast->pprev->pprev == NULL)
+      return nProofOfWorkLimit;
 
-    // EarthCoin: This fixes an issue where a 51% attack can change difficulty at will.
-    // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
-    int blockstogoback = nInterval-1;
-    if ((pindexLast->nHeight+1) != nInterval)
-        blockstogoback = nInterval;
+    const CBlockIndex* pindexFirst = pindexLast->pprev;
+    int64 nActualSpacing = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
 
-    // Go back by what we want to be 14 days worth of blocks
-    const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < blockstogoback; i++)
-        pindexFirst = pindexFirst->pprev;
-    assert(pindexFirst);
-
-    // Limit adjustment step
-    int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
-    printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
-    if (nActualTimespan < nTargetTimespan/4)
-        nActualTimespan = nTargetTimespan/4;
-    if (nActualTimespan > nTargetTimespan*4)
-        nActualTimespan = nTargetTimespan*4;
+    // limit the adjustment
+    if (nActualSpacing < nTargetSpacing/16)
+      nActualSpacing = nTargetSpacing/16;
+    if (nActualSpacing > nTargetSpacing*16)
+      nActualSpacing = nTargetSpacing*16;
 
     // Retarget
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
-    bnNew *= nActualTimespan;
-    bnNew /= nTargetTimespan;
+
+    bnNew *= ((nInterval - 1) * nTargetSpacing + 2 * nActualSpacing);
+    bnNew /= ((nInterval + 1) * nTargetSpacing);
 
     if (bnNew > bnProofOfWorkLimit)
-        bnNew = bnProofOfWorkLimit;
-
-    /// debug print
-    printf("GetNextWorkRequired RETARGET\n");
-    printf("nTargetTimespan = %"PRI64d"    nActualTimespan = %"PRI64d"\n", nTargetTimespan, nActualTimespan);
-    printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
-    printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
+      bnNew = bnProofOfWorkLimit;
 
     return bnNew.GetCompact();
 }
@@ -2125,8 +2157,12 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
     }
 
     // Check proof of work matches claimed amount
-    if (fCheckPOW && !CheckProofOfWork(GetPoWHash(), nBits))
+    if (fCheckPOW && !CheckProofOfWork(GetPoWHash(), nBits)) {
+      if (GetHash() == hashGenesisBlock && GetPoWHash() == hashGenesisBlockPoW)
+        ; // nevermind, genesis block follows different rules
+      else
         return state.DoS(50, error("CheckBlock() : proof of work failed"));
+    }
 
     // Check timestamp
     if (GetBlockTime() > GetAdjustedTime() + 2 * 60 * 60)
@@ -2749,11 +2785,11 @@ bool LoadBlockIndex()
 {
     if (fTestNet)
     {
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
-        hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
+        pchMessageStart[0] = 0xfd;
+        pchMessageStart[1] = 0xc2;
+        pchMessageStart[2] = 0xb6;
+        pchMessageStart[3] = 0xf1;
+        hashGenesisBlock = uint256("0xed0457370ddafea96096d4c9f5187efceece8d8ab5558194c7eebb06943c8c8c");
     }
 
     //
@@ -2779,33 +2815,33 @@ bool InitBlockIndex() {
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
         // Genesis Block:
-        // CBlock(hash=12a765e31ffd4059bada, PoW=0000050c34a64b415b6b, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=97ddfbbae6, nTime=1317972665, nBits=1e0ffff0, nNonce=2084524493, vtx=1)
-        //   CTransaction(hash=97ddfbbae6, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //     CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d0104404e592054696d65732030352f4f63742f32303131205374657665204a6f62732c204170706c65e280997320566973696f6e6172792c2044696573206174203536)
-        //     CTxOut(nValue=50.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
-        //   vMerkleTree: 97ddfbbae6
+        // CBlock(hash=21717d4df403301c0538, PoW=31e387abfb59b8a3c919, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=13757c3610, nTime=1386746168, nBits=1e0ffff0, nNonce=12468024, vtx=1)
+        //   CTransaction(hash=13757c3610, ver=2, vin.size=1, vout.size=1, nLockTime=0, strTxComment=)
+        //     CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d01044c5920446563656d6265722031392c20323031332097204172726573742c2073747269702d736561726368206f6620496e6469616e206469706c6f6d617420696e204e657720596f726b207472696767657273207570726f61722e)
+        //     CTxOut(nValue=0.00000000, scriptPubKey=04dcba12349012341234900abcd122)
+        //   vMerkleTree: 13757c3610
 
         // Genesis block
-        const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56";
+        const char* pszTimestamp = " December 19, 2013 \x97 Arrest, strip-search of Indian diplomat in New York triggers uproar.";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vout[0].nValue = 0 * COIN;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04dcba12349012341234900abcd12223abcd455abcd77788abcd000000aaaaabbbbbcccccdddddeeeeeff00ff00ff00ff001234567890abcdef0022446688abc11") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1317972665;
+        block.nTime    = 1386746168;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2084524493;
+        block.nNonce   = 12468024;
 
         if (fTestNet)
         {
-            block.nTime    = 1317798646;
-            block.nNonce   = 385270584;
+            block.nTime    = 1386000000;
+            block.nNonce   = 681588;
         }
 
         //// debug print
@@ -2813,7 +2849,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(block.hashMerkleRoot == hashGenesisBlockMerkleRoot);
         block.print();
         assert(hash == hashGenesisBlock);
 
@@ -3086,7 +3122,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfb, 0xc0, 0xb6, 0xdb }; // EarthCoin: increase each by adding 2 to bitcoin's value.
+unsigned char pchMessageStart[4] = { 0xc0, 0xdb, 0xf1, 0xfd };
 
 
 void static ProcessGetData(CNode* pfrom)
