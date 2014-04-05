@@ -3,6 +3,7 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#include "main.h"
 #include "alert.h"
 #include "checkpoints.h"
 #include "db.h"
@@ -383,6 +384,12 @@ bool CTransaction::IsStandard(string& strReason) const
     unsigned int sz = this->GetSerializeSize(SER_NETWORK, CTransaction::CURRENT_VERSION);
     if (sz >= MAX_STANDARD_TX_SIZE) {
         strReason = "tx-size";
+        return false;
+    }
+
+    // Disallow large transaction comments
+    if (strTxComment.length() > MAX_TX_COMMENT_LEN) {
+        strReason = "tx-comment-length";
         return false;
     }
 

@@ -28,7 +28,8 @@ public:
         Date = 1,
         Type = 2,
         ToAddress = 3,
-        Amount = 4
+        TxComment = 4,
+        Amount = 5,
     };
 
     /** Roles to get specific information from a transaction row.
@@ -76,6 +77,7 @@ private:
     QString formatTxToAddress(const TransactionRecord *wtx, bool tooltip) const;
     QString formatTxAmount(const TransactionRecord *wtx, bool showUnconfirmed=true) const;
     QString formatTooltip(const TransactionRecord *rec) const;
+    QString formatTxComment(const TransactionRecord *wtx, bool tooltip) const;
     QVariant txStatusDecoration(const TransactionRecord *wtx) const;
     QVariant txAddressDecoration(const TransactionRecord *wtx) const;
 
