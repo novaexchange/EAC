@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     QApplication::setOrganizationName("EarthCoin");
-    QApplication::setOrganizationDomain("earthcoin.org");
+    QApplication::setOrganizationDomain("getearthcoin.com");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
         QApplication::setApplicationName("EarthCoin-Qt-testnet");
     else

@@ -1,7 +1,8 @@
 EarthCoin 1.3.x
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 EarthCoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2013-2014 EarthCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
 This product includes software developed by the OpenSSL Project for use in

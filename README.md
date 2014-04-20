@@ -1,10 +1,11 @@
 EarthCoin integration/staging tree
 ================================
 
-http://www.earthcoin.org
+http://www.getearthcoin.com/
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 EarthCoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2013-2014 EarthCoin Developers
 
 What is EarthCoin?
 ----------------
@@ -19,7 +20,7 @@ The rest is the same as Bitcoin.
  - 2016 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the EarthCoin client sofware, see http://www.earthcoin.org.
+the EarthCoin client sofware, see http://www.getearthcoin.com/.
 
 License
 -------

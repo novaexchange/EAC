@@ -17,14 +17,14 @@
 	<key>CFBundleExecutable</key>
 	<string>EarthCoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.earthcoin.EarthCoin-Qt</string>
+	<string>com.getearthcoin.EarthCoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.earthcoin.EarthCoinPayment</string>
+            <string>com.getearthcoin.EarthCoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
               <string>earthcoin</string>
