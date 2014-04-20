@@ -35,7 +35,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+0"/>
         <source>The EarthCoin developers</source>
-        <translation>Die EarthCoinentwickler</translation>
+        <translation>Die Entwickler von EarthCoin</translation>
     </message>
 </context>
 <context>
