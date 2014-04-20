@@ -10,14 +10,32 @@ Copyright (c) 2013-2014 EarthCoin Developers
 What is EarthCoin?
 ----------------
 
-EarthCoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+EarthCoin (EAC) - EarthCoin is a new generation of scrypt coin that is descendant of Litecoin. Like Litecoin it uses scrypt as a proof of work scheme.
 
-The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+EarthCoin uses yearly period. Start with 10000 coins per block, it varies in a sine curve with amplitude of 2000, with a period of one year (like the Earth moving around the Sun). This means that you start with 10000 coins, and it adjust at each block, reaches maximum of 12000 coins per block after about 3 months, then going down gradually, reaches 10000 coins per block again at about 6 months, then going down further, reaches the minimum point of 8000 coins per block at about 9 months, then start to going up, and return to 10000 coins per block at one year, before cutting half in payout.
+
+EarthCoin provides superblock Awards. The following super reward zones are added:
+
+Every 14 days there will be one day with X2 payout.
+Every 31 days there will be one day with X5 payout.
+
+Day 1 - Day 3 are special super rewards days to celebrate the launch of the coin, and provide incentive to the early adopters.
+
+Day 1: X5 payout
+Day 2: X3 payout
+Day 3: X2 payout
+
+Other Specifications:
+  - 60 seconds block target
+  - Difference retargets each block
+  - Total coins will be 13.5 billion coins
+  - 5 confirmations for transaction
+  - 50 confirmations for minted blocks
+  - support transaction message
+  - normal block on average 10000 coins per block, varies seasonly
+  - The block payout will be halved every year, minimum payout 1 coin per block
+
+  - The default ports are 15677 (Connect) and 15678 (RPC)
 
 For more information, as well as an immediately useable, binary version of
 the EarthCoin client sofware, see http://www.getearthcoin.com/.
