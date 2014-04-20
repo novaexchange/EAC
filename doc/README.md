@@ -1,4 +1,4 @@
-EarthCoin 0.8.x BETA
+EarthCoin 1.3.x
 ====================
 
 Copyright (c) 2009-2014 Bitcoin Developers
