@@ -82,7 +82,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EarthCoin address</source>
+        <source>Sign a message to prove you own an EarthCoin address</source>
         <translation>Onderteken een bericht om te bewijzen dat u een bepaald EarthCoinadres bezit</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-56"/>
-        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your earthcoins from being stolen by malware infecting your computer.</source>
+        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
         <translation>EarthCoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw earthcoins stelen.</translation>
     </message>
     <message>
@@ -419,7 +419,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a EarthCoin address</source>
+        <source>Send coins to an EarthCoin address</source>
         <translation>Verstuur munten naar een EarthCoinadres</translation>
     </message>
     <message>
@@ -541,7 +541,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to EarthCoin network</source>
+        <source>%n active connection(s) to the EarthCoin network</source>
         <translation><numerusform>%n actieve connectie naar EarthCoinnetwerk</numerusform><numerusform>%n actieve connecties naar EarthCoinnetwerk</numerusform></translation>
     </message>
     <message>
@@ -1407,8 +1407,8 @@ Adres: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Het adres waaraan u wilt betalen  (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Het adres waaraan u wilt betalen  (bijv. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1448,8 +1448,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Vul een EarthCoinadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Vul een EarthCoinadres in (bijv. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
 </context>
 <context>
@@ -1471,8 +1471,8 @@ Adres: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Het adres om het bericht mee te ondertekenen (Vb.: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2).</translation>
+        <source>The address to sign the message with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Het adres om het bericht mee te ondertekenen (Vb.: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r).</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1544,8 +1544,8 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Het adres waarmee bet bericht was ondertekend (Vb.: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2).</translation>
+        <source>The address the message was signed with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Het adres waarmee bet bericht was ondertekend (Vb.: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r).</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1565,8 +1565,8 @@ Adres: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Vul een EarthCoinadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Vul een EarthCoinadres in (bijv. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="-2"/>

@@ -96,7 +96,7 @@
      <item>
       <widget class="QPushButton" name="signMessage">
        <property name="toolTip">
-        <string>Sign a message to prove you own a EarthCoin address</string>
+        <string>Sign a message to prove you own an EarthCoin address</string>
        </property>
        <property name="text">
         <string>Sign &amp;Message</string>

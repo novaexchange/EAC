@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EarthCoin address</source>
+        <source>Sign a message to prove you own an EarthCoin address</source>
         <translation>Подписать сообщение, чтобы доказать владение адресом EarthCoin</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your earthcoins from being stolen by malware infecting your computer.</source>
+        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши EarthCoin от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -419,7 +419,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a EarthCoin address</source>
+        <source>Send coins to an EarthCoin address</source>
         <translation>Отправить монеты на указанный адрес EarthCoin</translation>
     </message>
     <message>
@@ -541,7 +541,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to EarthCoin network</source>
+        <source>%n active connection(s) to the EarthCoin network</source>
         <translation><numerusform>%n активное соединение с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform><numerusform>%n активных соединений с сетью</numerusform></translation>
     </message>
     <message>
@@ -1407,8 +1407,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Адрес, на который будет выслан платёж (например Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Адрес, на который будет выслан платёж (например ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1448,7 +1448,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
         <translation>Введите EarthCoin-адрес (например 1LA5FtQhnnWnkK6zjFfutR7Stiit4wKd63)</translation>
     </message>
 </context>
@@ -1471,8 +1471,8 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Адрес, которым вы хотите подписать сообщение  (напр. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Адрес, которым вы хотите подписать сообщение  (напр. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1544,8 +1544,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Адрес, которым было подписано сообщение (напр. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Адрес, которым было подписано сообщение (напр. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1565,8 +1565,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Введите адрес EarthCoin (напр. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Введите адрес EarthCoin (напр. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="-2"/>

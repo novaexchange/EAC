@@ -67,7 +67,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your EarthCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Ezekkel a EarthCoin-címekkel fogadhatod kifizetéseket. Érdemes lehet minden egyes kifizető számára külön címet létrehozni, hogy könnyebben nyomon követhesd, kitől kaptál már pénzt.</translation>
+        <translation>Ezekkel an EarthCoin-címekkel fogadhatod kifizetéseket. Érdemes lehet minden egyes kifizető számára külön címet létrehozni, hogy könnyebben nyomon követhesd, kitől kaptál már pénzt.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -81,7 +81,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EarthCoin address</source>
+        <source>Sign a message to prove you own an EarthCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -274,7 +274,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-56"/>
-        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your earthcoins from being stolen by malware infecting your computer.</source>
+        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
         <translation>EarthCoin will close now to finish the encryption process. Ne feledd, hogy a tárca titkosítása sem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
@@ -374,7 +374,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location line="+4"/>
         <source>Show information about EarthCoin</source>
-        <translation>Információk a EarthCoinról</translation>
+        <translation>Információk an EarthCoinról</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -418,7 +418,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a EarthCoin address</source>
+        <source>Send coins to an EarthCoin address</source>
         <translation>Érmék küldése megadott címre</translation>
     </message>
     <message>
@@ -500,7 +500,7 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     <message>
         <location line="+7"/>
         <source>Sign messages with your EarthCoin addresses to prove you own them</source>
-        <translation>Üzenet aláírása a EarthCoin címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
+        <translation>Üzenet aláírása an EarthCoin címmel, amivel bizonyítja, hogy a cím az ön tulajdona.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -540,8 +540,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to EarthCoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a EarthCoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a EarthCoin-hálózattal</numerusform></translation>
+        <source>%n active connection(s) to the EarthCoin network</source>
+        <translation><numerusform>%n aktív kapcsolat an EarthCoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat an EarthCoin-hálózattal</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -820,7 +820,7 @@ Cím: %4
     <message>
         <location line="+31"/>
         <source>Automatically start EarthCoin after logging in to the system.</source>
-        <translation>Induljon el a EarthCoin a számítógép bekapcsolásakor</translation>
+        <translation>Induljon el an EarthCoin a számítógép bekapcsolásakor</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -855,7 +855,7 @@ Cím: %4
     <message>
         <location line="+7"/>
         <source>Connect to the EarthCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>SOCKS proxyn keresztüli csatlakozás a EarthCoin hálózatához (pl. Tor-on keresztüli csatlakozás esetén)</translation>
+        <translation>SOCKS proxyn keresztüli csatlakozás an EarthCoin hálózatához (pl. Tor-on keresztüli csatlakozás esetén)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -997,7 +997,7 @@ Cím: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting EarthCoin.</source>
-        <translation>Ez a beállítás a EarthCoin ujraindítása után lép érvénybe.</translation>
+        <translation>Ez a beállítás an EarthCoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1016,7 +1016,7 @@ Cím: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EarthCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a EarthCoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát an EarthCoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1407,7 +1407,7 @@ Cím: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1449,8 +1449,8 @@ Cím: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adj meg egy EarthCoin-címet (pl.: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2 )</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adj meg egy EarthCoin-címet (pl.: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r )</translation>
     </message>
 </context>
 <context>
@@ -1472,8 +1472,8 @@ Cím: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adj meg egy EarthCoin-címet (pl.: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2 )</translation>
+        <source>The address to sign the message with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adj meg egy EarthCoin-címet (pl.: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r )</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1545,8 +1545,8 @@ Cím: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adj meg egy EarthCoin-címet (pl.: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2 )</translation>
+        <source>The address the message was signed with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adj meg egy EarthCoin-címet (pl.: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r )</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1566,8 +1566,8 @@ Cím: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adj meg egy EarthCoin-címet (pl.: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2 )</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adj meg egy EarthCoin-címet (pl.: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r )</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1577,7 +1577,7 @@ Cím: %4
     <message>
         <location line="+3"/>
         <source>Enter EarthCoin signature</source>
-        <translation>Adja meg a EarthCoin aláírást</translation>
+        <translation>Adja meg an EarthCoin aláírást</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2629,7 +2629,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@fo
     <message>
         <location line="+5"/>
         <source>SSL options: (see the EarthCoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-opciók: (lásd a EarthCoin Wiki SSL-beállítási instrukcióit)</translation>
+        <translation>SSL-opciók: (lásd an EarthCoin Wiki SSL-beállítási instrukcióit)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2835,7 +2835,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@fo
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart EarthCoin to complete</source>
-        <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen a EarthCoin-t</translation>
+        <translation>A Tárca újraírása szükséges: Indítsa újra a teljesen an EarthCoin-t</translation>
     </message>
     <message>
         <location line="-95"/>

@@ -69,7 +69,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your EarthCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Detta är dina EarthCoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
+        <translation>Detta är dinan EarthCoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -83,7 +83,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EarthCoin address</source>
+        <source>Sign a message to prove you own an EarthCoin address</source>
         <translation>Signera ett meddelande för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -124,7 +124,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your EarthCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina EarthCoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar EarthCoins.</translation>
+        <translation>Detta är dinan EarthCoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar EarthCoins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -276,7 +276,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
-        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your earthcoins from being stolen by malware infecting your computer.</source>
+        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -420,7 +420,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a EarthCoin address</source>
+        <source>Send coins to an EarthCoin address</source>
         <translation>Skicka mynt till en EarthCoin-adress</translation>
     </message>
     <message>
@@ -542,7 +542,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to EarthCoin network</source>
+        <source>%n active connection(s) to the EarthCoin network</source>
         <translation><numerusform>%n aktiv anslutning till EarthCoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till EarthCoin-nätverket</numerusform></translation>
     </message>
     <message>
@@ -821,12 +821,12 @@ Adress: %4
     <message>
         <location line="+31"/>
         <source>Automatically start EarthCoin after logging in to the system.</source>
-        <translation>Starta EarthCoin automatiskt efter inloggning.</translation>
+        <translation>Startan EarthCoin automatiskt efter inloggning.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start EarthCoin on system login</source>
-        <translation>&amp;Starta EarthCoin vid systemstart</translation>
+        <translation>&amp;Startan EarthCoin vid systemstart</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -1221,7 +1221,7 @@ Adress: %4
     <message>
         <location line="+7"/>
         <source>Show the EarthCoin-Qt help message to get a list with possible EarthCoin command-line options.</source>
-        <translation>Visa EarthCoin-Qt hjälpmeddelande för att få en lista med möjliga EarthCoin kommandoradsalternativ.</translation>
+        <translation>Visan EarthCoin-Qt hjälpmeddelande för att få en lista med möjligan EarthCoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1256,7 +1256,7 @@ Adress: %4
     <message>
         <location line="+7"/>
         <source>Open the EarthCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna EarthCoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
+        <translation>Öppnan EarthCoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1408,8 +1408,8 @@ Adress: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adressen som betalningen skall skickas till  (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adressen som betalningen skall skickas till  (t.ex. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1449,8 +1449,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Ange en EarthCoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Ange en EarthCoin-adress (t.ex. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
 </context>
 <context>
@@ -1472,8 +1472,8 @@ Adress: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adressen att signera meddelandet med  (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adressen att signera meddelandet med  (t.ex. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1545,13 +1545,13 @@ Adress: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Adressen som meddelandet var signerat med  (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Adressen som meddelandet var signerat med  (t.ex. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified EarthCoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna EarthCoin-adressen</translation>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivnan EarthCoin-adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1566,8 +1566,8 @@ Adress: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Ange en EarthCoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Ange en EarthCoin-adress (t.ex. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="-2"/>

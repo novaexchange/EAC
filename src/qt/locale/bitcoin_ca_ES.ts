@@ -77,8 +77,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EarthCoin address</source>
-        <translation>Signa el missatge per provar que ets propietari de l&apos;adreça EarthCoin</translation>
+        <source>Sign a message to prove you own an EarthCoin address</source>
+        <translation>Signa el missatge per provar que ets propietari de l&apos;adreçan EarthCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -103,7 +103,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified EarthCoin address</source>
-        <translation>Verificar un missatge per asegurar-se que ha estat signat amb una adreça EarthCoin específica</translation>
+        <translation>Verificar un missatge per asegurar-se que ha estat signat amb una adreçan EarthCoin específica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -270,7 +270,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your earthcoins from being stolen by malware infecting your computer.</source>
+        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
         <translation>EarthCoin es tancarà ara per acabar el procés d&apos;encriptació. Recorda que encriptar el teu moneder no protegeix completament els teus earthcoins de ser robades per programari maliciós instal·lat al teu ordinador.</translation>
     </message>
     <message>
@@ -414,8 +414,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a EarthCoin address</source>
-        <translation>Enviar monedes a una adreça EarthCoin</translation>
+        <source>Send coins to an EarthCoin address</source>
+        <translation>Enviar monedes a una adreçan EarthCoin</translation>
     </message>
     <message>
         <location line="+49"/>
@@ -501,7 +501,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified EarthCoin addresses</source>
-        <translation>Verificar els missatges per assegurar-te que han estat signades amb una adreça EarthCoin específica.</translation>
+        <translation>Verificar els missatges per assegurar-te que han estat signades amb una adreçan EarthCoin específica.</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,8 +536,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to EarthCoin network</source>
-        <translation><numerusform>%n connexió activa a la xarxa EarthCoin</numerusform><numerusform>%n connexions actives a la xarxa EarthCoin</numerusform></translation>
+        <source>%n active connection(s) to the EarthCoin network</source>
+        <translation><numerusform>%n connexió activa a la xarxan EarthCoin</numerusform><numerusform>%n connexions actives a la xarxan EarthCoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -648,7 +648,7 @@ Address: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid EarthCoin address or malformed URI parameters.</source>
-        <translation>la URI no pot ser processada! Això es pot ser causat per una adreça EarthCoin invalida o paràmetres URI malformats.</translation>
+        <translation>la URI no pot ser processada! Això es pot ser causat per una adreçan EarthCoin invalida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -729,7 +729,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid EarthCoin address.</source>
-        <translation>L&apos;adreça introduida &quot;%1&quot; no és una adreça EarthCoin valida.</translation>
+        <translation>L&apos;adreça introduida &quot;%1&quot; no és una adreçan EarthCoin valida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -846,7 +846,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Connect to the EarthCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connectar a la xarxa EarthCoin a través de un SOCKS proxy (per exemple connectant a través de Tor).</translation>
+        <translation>Connectar a la xarxan EarthCoin a través de un SOCKS proxy (per exemple connectant a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1007,7 +1007,7 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EarthCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa EarthCoin un cop s&apos;ha establert connexió, però aquest proces no s&apos;ha completat encara.</translation>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxan EarthCoin un cop s&apos;ha establert connexió, però aquest proces no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1398,8 +1398,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>La adreça a on envia el pagament (per exemple: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>La adreça a on envia el pagament (per exemple: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1439,8 +1439,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Introdueixi una adreça de EarthCoin (per exemple Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Introdueixi una adreça de EarthCoin (per exemple ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
 </context>
 <context>
@@ -1462,8 +1462,8 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>La adreça amb la que signat els missatges (per exemple Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>La adreça amb la que signat els missatges (per exemple ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1505,7 +1505,7 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this EarthCoin address</source>
-        <translation>Signa el missatge per provar que ets propietari d&apos;aquesta adreça EarthCoin</translation>
+        <translation>Signa el missatge per provar que ets propietari d&apos;aquesta adreçan EarthCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1535,13 +1535,13 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>La adreça amb el que el missatge va ser signat (per exemple Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>La adreça amb el que el missatge va ser signat (per exemple ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified EarthCoin address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça EarthCoin específica</translation>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreçan EarthCoin específica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1556,8 +1556,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Introdueixi una adreça de EarthCoin (per exemple Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Introdueixi una adreça de EarthCoin (per exemple ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2804,7 +2804,7 @@ for example: alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@fo
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart EarthCoin to complete</source>
-        <translation>El moneder necesita ser re-escrit: re-inicia EarthCoin per a completar la tasca</translation>
+        <translation>El moneder necesita ser re-escrit: re-inician EarthCoin per a completar la tasca</translation>
     </message>
     <message>
         <location line="-95"/>

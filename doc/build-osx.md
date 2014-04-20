@@ -134,7 +134,7 @@ Rerunning "openssl version" should now return the correct version.
 Creating a release build
 ------------------------
 
-A earthcoind binary is not included in the EarthCoin-Qt.app bundle. You can ignore
+An earthcoind binary is not included in the EarthCoin-Qt.app bundle. You can ignore
 this section if you are building `earthcoind` for your own use.
 
 If you are building `litecond` for others, your build machine should be set up

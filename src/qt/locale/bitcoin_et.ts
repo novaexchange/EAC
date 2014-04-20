@@ -82,7 +82,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a EarthCoin address</source>
+        <source>Sign a message to prove you own an EarthCoin address</source>
         <translation>Allkirjasta sõnum, et tõestada Bitconi aadressi olemasolu.</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-56"/>
-        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your earthcoins from being stolen by malware infecting your computer.</source>
+        <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
         <translation>EarthCoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista earthcoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
@@ -419,13 +419,13 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a EarthCoin address</source>
+        <source>Send coins to an EarthCoin address</source>
         <translation>Saada münte EarthCoini aadressile</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for EarthCoin</source>
-        <translation>Muuda EarthCoini seadeid</translation>
+        <translation>Muudan EarthCoini seadeid</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,7 +501,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     <message>
         <location line="+7"/>
         <source>Sign messages with your EarthCoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma EarthCoini aadressiga</translation>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oman EarthCoini aadressiga</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -541,7 +541,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to EarthCoin network</source>
+        <source>%n active connection(s) to the EarthCoin network</source>
         <translation><numerusform>%n aktiivne ühendus EarthCoini võrku</numerusform><numerusform>%n aktiivset ühendust EarthCoini võrku</numerusform></translation>
     </message>
     <message>
@@ -819,7 +819,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+31"/>
         <source>Automatically start EarthCoin after logging in to the system.</source>
-        <translation>Käivita EarthCoin süsteemi logimisel.</translation>
+        <translation>Käivitan EarthCoin süsteemi logimisel.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,7 +854,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+7"/>
         <source>Connect to the EarthCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Kasuta EarthCoini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
+        <translation>Kasutan EarthCoini võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -944,7 +944,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+9"/>
         <source>Whether to show EarthCoin addresses in the transaction list or not.</source>
-        <translation>Kuvada EarthCoini aadress tehingute loetelus või mitte.</translation>
+        <translation>Kuvadan EarthCoini aadress tehingute loetelus või mitte.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1254,7 +1254,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+7"/>
         <source>Open the EarthCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava EarthCoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
+        <translation>Avan EarthCoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1406,8 +1406,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Tehingu saaja aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Tehingu saaja aadress (nt: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1447,8 +1447,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Sisesta EarthCoini aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Sisestan EarthCoini aadress (nt: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
 </context>
 <context>
@@ -1470,8 +1470,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Sõnumi signeerimise aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Sõnumi signeerimise aadress (nt: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1543,8 +1543,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Aadress, millega sõnum allkirjastati (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Aadress, millega sõnum allkirjastati (nt: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1564,8 +1564,8 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a EarthCoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Sisesta EarthCoini aadress (nt: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>Sisestan EarthCoini aadress (nt: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,7 +1575,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+3"/>
         <source>Enter EarthCoin signature</source>
-        <translation>Sisesta EarthCoini allkiri</translation>
+        <translation>Sisestan EarthCoini allkiri</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2627,7 +2627,7 @@ nt: alertnotify=echo %%s | email -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+5"/>
         <source>SSL options: (see the EarthCoin Wiki for SSL setup instructions)</source>
-        <translation>SSL valikud: (vaata EarthCoini Wikist või SSL sätete juhendist)</translation>
+        <translation>SSL valikud: (vaatan EarthCoini Wikist või SSL sätete juhendist)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2822,7 +2822,7 @@ nt: alertnotify=echo %%s | email -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart EarthCoin to complete</source>
-        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita EarthCoin</translation>
+        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivitan EarthCoin</translation>
     </message>
     <message>
         <location line="-95"/>

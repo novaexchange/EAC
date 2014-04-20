@@ -42,7 +42,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
   ./earthcoind -proxy=127.0.0.1:9050
 
 
-2. Run a earthcoin hidden server
+2. Run an earthcoin hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
