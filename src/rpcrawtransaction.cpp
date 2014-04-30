@@ -278,12 +278,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
 
     if (params.size() == 3)
     {
-        std::string txcomment = params[2].get_str();
-        if (txcomment.length() > MAX_TX_COMMENT_LEN)
-        {
-            txcomment.resize(MAX_TX_COMMENT_LEN);
-        }
-        rawTx.strTxComment = txcomment;
+        rawTx.strTxComment = params[2].get_str().substr(0, MAX_TX_COMMENT_LEN);
     }
 
     BOOST_FOREACH(const Value& input, inputs)
