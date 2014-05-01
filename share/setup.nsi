@@ -45,7 +45,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile earthcoin-${VERSION}-win32-setup.exe
+OutFile earthcoin-1.3.0-win32-setup.exe
 InstallDir $PROGRAMFILES\EarthCoin
 CRCCheck on
 XPStyle on
