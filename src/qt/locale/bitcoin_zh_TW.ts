@@ -1,19 +1,21 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="zh_TW">
 <defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About EarthCoin</source>
-        <translation>關於莱特幣</translation>
+        <translation>關於地球幣</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;EarthCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;莱特幣&lt;/b&gt;版本</translation>
+        <translation>&lt;b&gt;地球幣&lt;/b&gt;版本</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+59"/>
         <source>
 This is experimental software.
 
@@ -28,14 +30,28 @@ This product includes software developed by the OpenSSL Project for use in the O
 此產品也包含了由 OpenSSL Project 所開發的 OpenSSL Toolkit (http://www.openssl.org/) 軟體, 由 Eric Young (eay@cryptsoft.com) 撰寫的加解密軟體, 以及由 Thomas Bernard 所撰寫的 UPnP 軟體.</translation>
     </message>
     <message>
-        <location filename="../aboutdialog.cpp" line="+14"/>
+        <location filename="../aboutdialog.cpp" line="+22"/>
         <source>Copyright</source>
         <translation>版權</translation>
     </message>
     <message>
         <location line="+0"/>
+        <source>The Bitcoin developers</source>
+        <translation> 比特幣開發團隊</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>2011-%1 The Litecoin developers</source>
+        <translation>2011-%1萊特幣開發團隊</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>2013-%1 The EarthCoin developers</source>
+        <translation>2013-%1地球幣開發團隊</translation>
+    </message>
+    <message>
         <source>The EarthCoin developers</source>
-        <translation>莱特幣開發人員</translation>
+        <translation type="obsolete">地球幣開發團隊</translation>
     </message>
 </context>
 <context>
@@ -66,14 +82,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>新增位址</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+63"/>
+        <location filename="../addressbookpage.cpp" line="+67"/>
         <source>These are your EarthCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>這些是你用來收款的莱特幣位址. 你可以提供不同的位址給不同的付款人, 來追蹤是誰支付給你.</translation>
+        <translation>這是您用來收款的地球幣位址. 你可以提供不同的位址給不同的付款人, 來追蹤是誰支付給你.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>&amp;Copy Address</source>
-        <translation>複製位址</translation>
+        <translation>&amp;複製位址</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -83,7 +99,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+11"/>
         <source>Sign a message to prove you own an EarthCoin address</source>
-        <translation>簽署訊息是用來證明莱特幣位址是你的</translation>
+        <translation>簽署訊息是用來證明地球幣位址是你的</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -103,45 +119,45 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>&amp;Export</source>
-        <translation>匯出</translation>
+        <translation>&amp;匯出</translation>
     </message>
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified EarthCoin address</source>
-        <translation>驗證訊息是用來確認訊息是用指定的莱特幣位址簽署的</translation>
+        <translation>驗證訊息是用來確認訊息是用指定的地球幣位址簽署的</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation>訊息驗證</translation>
+        <translation>&amp;訊息驗證</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>&amp;Delete</source>
-        <translation>刪除</translation>
+        <translation>&amp;刪除</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your EarthCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的莱特幣位址. 在付錢之前, 務必要檢查金額和收款位址是否正確.</translation>
+        <translation>這是您用來付款的地球幣位址。在付錢之前, 務必要檢查金額和收款位址是否正確。</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Copy &amp;Label</source>
-        <translation>複製標記</translation>
+        <translation>複製 &amp;標記</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Edit</source>
-        <translation>編輯</translation>
+        <translation>&amp;編輯</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation>付錢</translation>
+        <translation>付款</translation>
     </message>
     <message>
-        <location line="+260"/>
+        <location line="+265"/>
         <source>Export Address Book Data</source>
         <translation>匯出位址簿資料</translation>
     </message>
@@ -164,7 +180,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+144"/>
+        <location filename="../addresstablemodel.cpp" line="+148"/>
         <source>Label</source>
         <translation>標記</translation>
     </message>
@@ -202,7 +218,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>重複新密碼</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+33"/>
+        <location filename="../askpassphrasedialog.cpp" line="+37"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>輸入錢包的新密碼.&lt;br/&gt;請用&lt;b&gt;10個以上的字元&lt;/b&gt;, 或是&lt;b&gt;8個以上的單字&lt;/b&gt;.</translation>
     </message>
@@ -249,7 +265,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR EARTHCOINS&lt;/b&gt;!</source>
-        <translation>警告: 如果將錢包加密後忘記密碼, 你會&lt;b&gt;失去其中所有的莱特幣&lt;/b&gt;!</translation>
+        <translation>警告: 如果將錢包加密後忘記密碼, 你會&lt;b&gt;失去其中所有的地球幣&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -276,7 +292,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-56"/>
         <source>EarthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your EarthCoins from being stolen by malware infecting your computer.</source>
-        <translation>莱特幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的莱特幣.</translation>
+        <translation>地球幣將關閉軟體以完成加密過程。 請您謹記：錢包加密並不是萬能的，電腦中毒，您的地球幣還是有可能丟失。</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -323,19 +339,19 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+233"/>
+        <location filename="../bitcoingui.cpp" line="+237"/>
         <source>Sign &amp;message...</source>
-        <translation>訊息簽署...</translation>
+        <translation>對&amp;訊息簽署...</translation>
     </message>
     <message>
-        <location line="+280"/>
+        <location line="+296"/>
         <source>Synchronizing with network...</source>
         <translation>網路同步中...</translation>
     </message>
     <message>
-        <location line="-349"/>
+        <location line="-365"/>
         <source>&amp;Overview</source>
-        <translation>總覽</translation>
+        <translation>&amp;總覽</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -345,7 +361,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>交易</translation>
+        <translation>&amp;交易記錄</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -375,7 +391,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+4"/>
         <source>Show information about EarthCoin</source>
-        <translation>顯示莱特幣相關資訊</translation>
+        <translation>顯示地球幣的相關資訊</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -390,7 +406,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
-        <translation>選項...</translation>
+        <translation>&amp;選項...</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -408,7 +424,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>密碼變更...</translation>
     </message>
     <message>
-        <location line="+285"/>
+        <location line="+301"/>
         <source>Importing blocks from disk...</source>
         <translation>從磁碟匯入區塊中...</translation>
     </message>
@@ -418,14 +434,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>重建磁碟區塊索引中...</translation>
     </message>
     <message>
-        <location line="-347"/>
+        <location line="-363"/>
         <source>Send coins to an EarthCoin address</source>
-        <translation>付錢到莱特幣位址</translation>
+        <translation>付錢到地球幣位址</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for EarthCoin</source>
-        <translation>修改莱特幣的設定選項</translation>
+        <translation>修改地球幣的設定選項</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -440,7 +456,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+6"/>
         <source>&amp;Debug window</source>
-        <translation>除錯視窗</translation>
+        <translation>&amp;除錯視窗</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -450,43 +466,43 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-4"/>
         <source>&amp;Verify message...</source>
-        <translation>驗證訊息...</translation>
+        <translation>&amp;驗證消息...</translation>
     </message>
     <message>
-        <location line="-165"/>
-        <location line="+530"/>
+        <location line="-170"/>
+        <location line="+551"/>
         <source>EarthCoin</source>
-        <translation>莱特幣</translation>
+        <translation>地球幣</translation>
     </message>
     <message>
-        <location line="-530"/>
+        <location line="-551"/>
         <source>Wallet</source>
         <translation>錢包</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location line="+106"/>
         <source>&amp;Send</source>
-        <translation>付出</translation>
+        <translation>&amp;付出</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation>收受</translation>
+        <translation>&amp;收受</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>&amp;Addresses</source>
-        <translation>位址</translation>
+        <translation>&amp;位址</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>&amp;About EarthCoin</source>
-        <translation>關於莱特幣</translation>
+        <translation>&amp;關於地球幣</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>&amp;Show / Hide</source>
-        <translation>顯示或隱藏</translation>
+        <translation>&amp;顯示 / 隱藏</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -501,17 +517,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+7"/>
         <source>Sign messages with your EarthCoin addresses to prove you own them</source>
-        <translation>用莱特幣位址簽署訊息來證明那是你的</translation>
+        <translation>用地球幣位址簽署訊息來證明那是你的</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified EarthCoin addresses</source>
-        <translation>驗證訊息來確認是用指定的莱特幣位址簽署的</translation>
+        <translation>驗證訊息來確認是用指定的地球幣位址簽署的</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>&amp;File</source>
-        <translation>檔案</translation>
+        <translation>&amp;檔案</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -521,7 +537,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+6"/>
         <source>&amp;Help</source>
-        <translation>求助</translation>
+        <translation>&amp;求助</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -532,17 +548,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+17"/>
         <location line="+10"/>
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation>[測試網路]</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+63"/>
         <source>EarthCoin client</source>
-        <translation>莱特幣客戶端軟體</translation>
+        <translation>地球幣客戶端軟體</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to the EarthCoin network</source>
-        <translation><numerusform>與莱特幣網路有 %n 個連線在使用中</numerusform></translation>
+        <translation>
+            <numerusform>與地球幣網路有 %n 個連線在使用中</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+22"/>
@@ -562,22 +580,28 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n 個小時</numerusform></translation>
+        <translation>
+            <numerusform>%n 個小時</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n 天</numerusform></translation>
+        <translation>
+            <numerusform>%n 天</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation><numerusform>%n 個星期</numerusform></translation>
+        <translation>
+            <numerusform>%n 個星期</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
         <source>%1 behind</source>
-        <translation>落後 %1</translation>
+        <translation>落後 %1 </translation>
     </message>
     <message>
         <location line="+14"/>
@@ -590,7 +614,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>會看不見在這之後的交易.</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+27"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -605,12 +629,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>資訊</translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+74"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation>這筆交易的資料大小超過限制了. 你還是可以付出 %1 的費用來傳送, 這筆費用會付給處理你的交易的節點, 並幫助維持整個網路. 你願意支付這項費用嗎?</translation>
     </message>
     <message>
-        <location line="-140"/>
+        <location line="-149"/>
         <source>Up to date</source>
         <translation>最新狀態</translation>
     </message>
@@ -620,7 +644,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>進度追趕中...</translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+121"/>
         <source>Confirm transaction fee</source>
         <translation>確認交易手續費</translation>
     </message>
@@ -656,7 +680,7 @@ Address: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid EarthCoin address or malformed URI parameters.</source>
-        <translation>無法解析 URI! 也許莱特幣位址無效或 URI 參數有誤.</translation>
+        <translation>無法解析 URI! 也許地球幣位址無效或 URI 參數有誤.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -669,17 +693,301 @@ Address: %4
         <translation>錢包&lt;b&gt;已加密&lt;/b&gt;並且正&lt;b&gt;上鎖中&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+111"/>
+        <location filename="../bitcoin.cpp" line="+113"/>
         <source>A fatal error occurred. EarthCoin can no longer continue safely and will quit.</source>
-        <translation>發生了致命的錯誤. 莱特幣程式無法再繼續安全執行, 只好結束.</translation>
+        <translation>發生了致命的錯誤. 地球幣程式無法再繼續安全執行, 只好結束.</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+104"/>
+        <location filename="../clientmodel.cpp" line="+108"/>
         <source>Network Alert</source>
         <translation>網路警報</translation>
+    </message>
+</context>
+<context>
+    <name>CoinControlDialog</name>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <source>Coin Control</source>
+        <translation>幣控制</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Quantity:</source>
+        <translation>數量:</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Bytes:</source>
+        <translation>位元組:</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Amount:</source>
+        <translation>金額：</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Priority:</source>
+        <translation>優先順序:</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Fee:</source>
+        <translation>費用:</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Low Output:</source>
+        <translation>低輸出:</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <location filename="../coincontroldialog.cpp" line="+592"/>
+        <source>no</source>
+        <translation>否</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>After Fee:</source>
+        <translation>費後</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Change:</source>
+        <translation>找零</translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>(un)select all</source>
+        <translation>(否)選擇全部</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Tree mode</source>
+        <translation>樹形模式</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>List mode</source>
+        <translation>清單模式</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>(1 locked)</source>
+        <translation>1 鎖</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Amount</source>
+        <translation>金額</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address</source>
+        <translation>位址</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Date</source>
+        <translation>日期</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Confirmations</source>
+        <translation>確認項</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirmed</source>
+        <translation>已確認</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Priority</source>
+        <translation>優先順序</translation>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="-555"/>
+        <source>Copy address</source>
+        <translation>複製位址</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy label</source>
+        <translation>複製標記</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <source>Copy amount</source>
+        <translation>複製金額</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Copy transaction ID</source>
+        <translation>複製交易識別碼</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock unspent</source>
+        <translation>未用鎖</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unlock unspent</source>
+        <translation>未用鎖</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Copy quantity</source>
+        <translation>複製數量</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation>複製費用</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation>複製費後</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation>複製位元組</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation>複製優先順序</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation>複製低輸出</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation>複製找零</translation>
+    </message>
+    <message>
+        <location line="+323"/>
+        <source>highest</source>
+        <translation>最高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>high</source>
+        <translation>高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium-high</source>
+        <translation>中高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium</source>
+        <translation>中</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>low-medium</source>
+        <translation>低中</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lowest</source>
+        <translation>最低</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>(%1 locked)</source>
+        <translation>%1 鎖</translation>
+    </message>
+    <message>
+        <location line="+178"/>
+        <source>DUST</source>
+        <translation>灰色</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>yes</source>
+        <translation >是</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>This label turns red, if the transaction size is bigger than 5000 bytes.
+
+ This means a fee of at least %1 per kb is required.
+
+ Can vary +/- 1 Byte per input.</source>
+        <translation>這個標籤會變成紅色，如果交易大小大於5000位元組。
+
+這意味著至少有1％每KB的費用是必需的。
+
+可以有+/ - 每輸入1個位元組。</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transactions with higher priority get more likely into a block.
+
+This label turns red, if the priority is smaller than &quot;medium&quot;.
+
+ This means a fee of at least %1 per kb is required.</source>
+        <translation>具有較高優先順序的交易獲得更容易成塊。
+
+		這個標籤會變成紅色，如果優先順序小於&quot;中&quot;
+
+這意味著至少有1％每KB的費用是必需的。</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.
+
+ This means a fee of at least %2 is required. 
+
+ Amounts below 0.546 times the minimum relay fee are shown as DUST.</source>
+        <translation>這個標籤會變成紅色，如果有收件人收到的金額小於％1。
+
+這意味著，至少2％的費用是必須的。
+
+低於0.546倍的最低中繼費用金額顯示為灰色。</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if the change is smaller than %1.
+
+ This means a fee of at least %2 is required.</source>
+        <translation>這個標籤會變成紅色，如果找零小於％1。
+
+ 這意味著，至少2％的費用是必須的。</translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <location line="+66"/>
+        <source>(no label)</source>
+        <translation>(沒有標記)</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>change from %1 (%2)</source>
+        <translation>找零 從 %1(%2)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(change)</source>
+        <translation>找零</translation>
     </message>
 </context>
 <context>
@@ -692,17 +1000,17 @@ Address: %4
     <message>
         <location line="+11"/>
         <source>&amp;Label</source>
-        <translation>標記</translation>
+        <translation>&amp;標記</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>The label associated with this address book entry</source>
-        <translation>與這個位址簿項目關聯的標記</translation>
+        <translation>與此地址條目關聯的標記</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Address</source>
-        <translation>位址</translation>
+        <translation>&amp;位址</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -710,7 +1018,7 @@ Address: %4
         <translation>與這個位址簿項目關聯的位址. 付款位址才能被更改.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+21"/>
+        <location filename="../editaddressdialog.cpp" line="+25"/>
         <source>New receiving address</source>
         <translation>新收款位址</translation>
     </message>
@@ -737,7 +1045,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid EarthCoin address.</source>
-        <translation>輸入的位址 &quot;%1&quot; 並不是有效的莱特幣位址.</translation>
+        <translation>輸入的位址 &quot;%1&quot; 並不是有效的地球幣位址.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -753,10 +1061,10 @@ Address: %4
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+502"/>
         <location line="+12"/>
         <source>EarthCoin-Qt</source>
-        <translation>莱特幣-Qt</translation>
+        <translation>EarthCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -805,27 +1113,27 @@ Address: %4
     <message>
         <location line="+16"/>
         <source>&amp;Main</source>
-        <translation>主要</translation>
+        <translation>&amp;主要的</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+66"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
         <translation>非必要的交易手續費, 以 kB 為計費單位, 且有助於縮短你的交易處理時間. 大部份交易資料的大小是 1 kB.</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay transaction &amp;fee</source>
-        <translation>付交易手續費</translation>
+        <translation>付交易 &amp;手續</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="-75"/>
         <source>Automatically start EarthCoin after logging in to the system.</source>
-        <translation>在登入系統後自動啓動莱特幣.</translation>
+        <translation>在登入系統後自動啓動地球幣.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start EarthCoin on system login</source>
-        <translation>系統登入時啟動莱特幣</translation>
+        <translation>系統登入時啟動地球幣</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -839,8 +1147,23 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
+        <source>W&amp;allet</source>
+        <translation>錢包</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
+        <translation>如果禁用未經證實的變化的消費，不能用於從交易的變化，直到該交易至少有一個確認。這也會影響您的餘額是如何計算出來的。</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Spend unconfirmed change  (experts only)</source>
+        <translation>花費未經確認的找零(專家用)</translation>
+    </message>
+    <message>
+        <location line="+21"/>
         <source>&amp;Network</source>
-        <translation>網路</translation>
+        <translation>&amp;網路</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -855,12 +1178,12 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Connect to the EarthCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>透過 SOCKS 代理伺服器連線至莱特幣網路 (比如說要透過 Tor 連線).</translation>
+        <translation>通過代理伺服器連接地球幣網路(例如：通過Tor連接)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>透過 SOCKS 代理伺服器連線:</translation>
+        <translation>&amp;通過Socks代理連接:</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -895,7 +1218,7 @@ Address: %4
     <message>
         <location line="+36"/>
         <source>&amp;Window</source>
-        <translation>視窗</translation>
+        <translation>&amp;視窗</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -920,22 +1243,22 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>&amp;Display</source>
-        <translation>顯示</translation>
+        <translation>&amp;顯示</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
-        <translation>使用界面語言</translation>
+        <translation>使用者介面&amp;語言:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting EarthCoin.</source>
-        <translation>可以在這裡設定使用者介面的語言. 這個設定在莱特幣程式重啓後才會生效.</translation>
+        <translation>可以在這裡設定使用者介面的語言. 這個設定在地球幣程式重啓後才會生效.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>金額顯示單位:</translation>
+        <translation>&amp;金額顯示單位:</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -945,7 +1268,7 @@ Address: %4
     <message>
         <location line="+9"/>
         <source>Whether to show EarthCoin addresses in the transaction list or not.</source>
-        <translation>是否要在交易列表中顯示莱特幣位址.</translation>
+        <translation>是否需要在交易清單中顯示地球幣位址。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -953,27 +1276,37 @@ Address: %4
         <translation>在交易列表顯示位址</translation>
     </message>
     <message>
+        <location line="+7"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation>是否顯示幣控制功能</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display coin &amp;control features (experts only!)</source>
+        <translation>顯示幣&amp;控制功能(專家用)</translation>
+    </message>
+    <message>
         <location line="+71"/>
         <source>&amp;OK</source>
-        <translation>好</translation>
+        <translation>&amp;好</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Cancel</source>
-        <translation>取消</translation>
+        <translation>&amp;取消</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Apply</source>
-        <translation>套用</translation>
+        <translation>&amp;套用</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+53"/>
+        <location filename="../optionsdialog.cpp" line="+58"/>
         <source>default</source>
         <translation>預設</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+134"/>
         <source>Confirm options reset</source>
         <translation>確認回復選項</translation>
     </message>
@@ -997,12 +1330,12 @@ Address: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting EarthCoin.</source>
-        <translation>這個設定會在莱特幣程式重啓後生效.</translation>
+        <translation>這個設定會在程式重啓後生效.</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>提供的代理伺服器位址無效</translation>
+        <translation>提供的代理伺服器位址無效。</translation>
     </message>
 </context>
 <context>
@@ -1016,12 +1349,12 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EarthCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>顯示的資訊可能是過期的. 與莱特幣網路的連線建立後, 你的錢包會自動和網路同步, 但這個步驟還沒完成.</translation>
+        <translation>顯示的資訊可能是過期的. 與地球幣網路的連線建立後, 你的錢包會自動和網路同步, 但這個步驟還沒完成.</translation>
     </message>
     <message>
         <location line="-124"/>
         <source>Balance:</source>
-        <translation>餘額:</translation>
+        <translation>餘額：</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1046,7 +1379,7 @@ Address: %4
     <message>
         <location line="+46"/>
         <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
-        <translation>&lt;b&gt;最近交易&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;最近交易記錄&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -1059,7 +1392,7 @@ Address: %4
         <translation>尚未確認之交易的總額, 不包含在目前餘額中</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+116"/>
+        <location filename="../overviewpage.cpp" line="+120"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>沒同步</translation>
@@ -1068,9 +1401,9 @@ Address: %4
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+107"/>
+        <location filename="../paymentserver.cpp" line="+109"/>
         <source>Cannot start earthcoin: click-to-pay handler</source>
-        <translation>無法啟動 earthcoin 隨按隨付處理器</translation>
+        <translation>無法啟動地球幣：隨按隨付處理器</translation>
     </message>
 </context>
 <context>
@@ -1088,7 +1421,7 @@ Address: %4
     <message>
         <location line="+56"/>
         <source>Amount:</source>
-        <translation>金額:</translation>
+        <translation>金額：</translation>
     </message>
     <message>
         <location line="-44"/>
@@ -1106,7 +1439,7 @@ Address: %4
         <translation>儲存為...</translation>
     </message>
     <message>
-        <location filename="../qrcodedialog.cpp" line="+62"/>
+        <location filename="../qrcodedialog.cpp" line="+64"/>
         <source>Error encoding URI into QR Code.</source>
         <translation>將 URI 編碼成 QR 條碼失敗</translation>
     </message>
@@ -1148,7 +1481,7 @@ Address: %4
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
-        <location filename="../rpcconsole.cpp" line="+339"/>
+        <location filename="../rpcconsole.cpp" line="+345"/>
         <source>N/A</source>
         <translation>無</translation>
     </message>
@@ -1160,12 +1493,12 @@ Address: %4
     <message>
         <location line="-45"/>
         <source>&amp;Information</source>
-        <translation>資訊</translation>
+        <translation>&amp;資訊</translation>
     </message>
     <message>
         <location line="+68"/>
         <source>Using OpenSSL version</source>
-        <translation>使用 OpenSSL 版本</translation>
+        <translation>使用OpenSSL版本</translation>
     </message>
     <message>
         <location line="+49"/>
@@ -1210,7 +1543,7 @@ Address: %4
     <message>
         <location line="+52"/>
         <source>&amp;Open</source>
-        <translation>開啓</translation>
+        <translation>&amp;開啓</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -1220,17 +1553,17 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Show the EarthCoin-Qt help message to get a list with possible EarthCoin command-line options.</source>
-        <translation>顯示莱特幣-Qt的求助訊息, 來取得可用的命令列選項列表.</translation>
+        <translation>顯示EarthCoin命令列選項説明資訊</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Show</source>
-        <translation>顯示</translation>
+        <translation>&amp;顯示</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>&amp;Console</source>
-        <translation>主控台</translation>
+        <translation>&amp;主控台</translation>
     </message>
     <message>
         <location line="-260"/>
@@ -1240,12 +1573,12 @@ Address: %4
     <message>
         <location line="-104"/>
         <source>EarthCoin - Debug window</source>
-        <translation>莱特幣 - 除錯視窗</translation>
+        <translation>地球幣 - 除錯窗口</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>EarthCoin Core</source>
-        <translation>莱特幣核心</translation>
+        <translation>地球幣核心</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1255,7 +1588,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Open the EarthCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>從目前的資料目錄下開啓莱特幣的除錯紀錄檔. 當紀錄檔很大時可能要花好幾秒的時間.</translation>
+        <translation>從目前的資料目錄下開啓地球幣的除錯紀錄檔. 當紀錄檔很大時可能要花好幾秒的時間.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1265,7 +1598,7 @@ Address: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the EarthCoin RPC console.</source>
-        <translation>歡迎使用莱特幣 RPC 主控台.</translation>
+        <translation>歡迎來到 RPC 控制台.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1282,7 +1615,7 @@ Address: %4
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+124"/>
+        <location filename="../sendcoinsdialog.cpp" line="+189"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+5"/>
@@ -1293,14 +1626,99 @@ Address: %4
         <translation>付錢</translation>
     </message>
     <message>
+        <location line="+76"/>
+        <source>Coin Control Features</source>
+        <translation>幣控制功能</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inputs...</source>
+        <translation>輸入...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>automatically selected</source>
+        <translation>自動選擇</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Insufficient funds!</source>
+        <translation>資金不足</translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Quantity:</source>
+        <translation>數量:</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Bytes:</source>
+        <translation>位元組:</translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Amount:</source>
+        <translation>金額：</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Priority:</source>
+        <translation>優先:</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>medium</source>
+        <translation>中</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Fee:</source>
+        <translation>費用</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Low Output:</source>
+        <translation>低輸出</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>no</source>
+        <translation>否</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>After Fee:</source>
+        <translation>費後</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Change:</source>
+        <translation>找零</translation>
+    </message>
+    <message>
         <location line="+50"/>
+        <source>custom change address</source>
+        <translation>定義找零地址</translation>
+    </message>
+    <message>
+        <location line="+67"/>
+        <source>Transaction &amp;comment: </source>
+        <translation>交易備註</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter a transaction comment (Note: this information is public)</source>
+        <translation>輸入交易備註(注:此資訊是公開的)</translation>
+    </message>
+    <message>
+        <location line="+53"/>
         <source>Send to multiple recipients at once</source>
         <translation>一次付給多個人</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>加收款人</translation>
+        <translation>添加收款人</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1315,12 +1733,16 @@ Address: %4
     <message>
         <location line="+22"/>
         <source>Balance:</source>
-        <translation>餘額:</translation>
+        <translation>餘額：</translation>
     </message>
     <message>
         <location line="+10"/>
+        <source>123.456 EAC</source>
+        <translation>123.456 EAC</translation>
+    </message>
+    <message>
         <source>123.456 BTC</source>
-        <translation>123.456 BTC</translation>
+        <translation type="obsolete">123.456 BTC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1333,12 +1755,63 @@ Address: %4
         <translation>付出</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-59"/>
+        <location filename="../sendcoinsdialog.cpp" line="-181"/>
+        <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
+        <translation>請輸入地球幣位址 (例如: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Enter a transaction comment (Note: This information is public)</source>
+        <translation>輸入交易備註(注:此資訊是公開的)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Copy quantity</source>
+        <translation>複製數量</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>複製金額</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy fee</source>
+        <translation>複製費用</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation>複製費後</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation>複製位元組</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation>複製優先</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation>複製低輸出</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation>複製找零</translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <location line="+2"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; 給 %2 (%3)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Confirm send coins</source>
         <translation>確認要付錢</translation>
     </message>
@@ -1353,7 +1826,7 @@ Address: %4
         <translation>和</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+27"/>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>無效的收款位址, 請再檢查看看.</translation>
     </message>
@@ -1387,6 +1860,21 @@ Address: %4
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>錯誤: 交易被拒絕. 有時候會發生這種錯誤, 是因為你錢包中的一些錢已經被花掉了. 比如說你複製了錢包檔 wallet.dat, 然後用複製的錢包花掉了錢, 你現在所用的原來的錢包中卻沒有該筆交易紀錄.</translation>
     </message>
+    <message>
+        <location line="+276"/>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>警告:不正確的比特幣位址</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>(no label)</source>
+        <translation>(沒有標記)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Warning: Unknown change address</source>
+        <translation>警告:未知的找零地址</translation>
+    </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
@@ -1406,23 +1894,27 @@ Address: %4
         <translation>付給:</translation>
     </message>
     <message>
-        <location line="+34"/>
         <source>The address to send the payment to (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
-        <translation>付款的目標位址 (比如說 ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
+        <translation type="obsolete">付款的目標位址 (比如說 ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
-        <location line="+60"/>
-        <location filename="../sendcoinsentry.cpp" line="+26"/>
+        <location line="+94"/>
+        <location filename="../sendcoinsentry.cpp" line="+30"/>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>輸入一個標記給這個位址, 並加到位址簿中</translation>
     </message>
     <message>
         <location line="-78"/>
         <source>&amp;Label:</source>
-        <translation>標記:</translation>
+        <translation>&amp;標記：</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+18"/>
+        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>發送付款的地址(如. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Choose address from address book</source>
         <translation>從位址簿中選一個位址</translation>
     </message>
@@ -1449,7 +1941,7 @@ Address: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
-        <translation>輸入莱特幣位址 (比如說 ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
+        <translation>輸入地球幣位址 (比如說 ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
 </context>
 <context>
@@ -1457,12 +1949,12 @@ Address: %4
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>簽章 - 簽署或驗證訊息</translation>
+        <translation>簽名 - 為消息簽名/驗證簽名消息</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Sign Message</source>
-        <translation>訊息簽署</translation>
+        <translation>&amp;簽名消息</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1514,7 +2006,7 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this EarthCoin address</source>
-        <translation>簽署訊息是用來證明這個莱特幣位址是你的</translation>
+        <translation>簽名訊息，證明這個位址屬於您。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1550,7 +2042,7 @@ Address: %4
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified EarthCoin address</source>
-        <translation>驗證訊息是用來確認訊息是用指定的莱特幣位址簽署的</translation>
+        <translation>驗證訊息是用來確認訊息是用指定的地球幣位址簽署的</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1563,10 +2055,10 @@ Address: %4
         <translation>重置所有訊息驗證欄位</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="+27"/>
+        <location filename="../signverifymessagedialog.cpp" line="+31"/>
         <location line="+3"/>
         <source>Enter an EarthCoin address (e.g. ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</source>
-        <translation>輸入莱特幣位址 (比如說 ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
+        <translation>請輸入地球幣位址 (比如說: ehQ3UtA9du6rVz4xUxJXBCrEAMB3Nggd3r)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1576,7 +2068,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Enter EarthCoin signature</source>
-        <translation>輸入莱特幣簽章</translation>
+        <translation>輸入地球幣簽章</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1648,25 +2140,39 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The EarthCoin developers</source>
-        <translation>莱特幣開發人員</translation>
+        <location filename="../splashscreen.cpp" line="+29"/>
+        <source>The Bitcoin developers</source>
+        <translation>比特幣開發團隊</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>The Litecoin developers</source>
+        <translation>萊特幣開發團隊</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The EarthCoin developers</source>
+        <translation>地球幣開發團隊</translation>
+    </message>
+    <message>
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation type="obsolete">測試網路</translation>
     </message>
 </context>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+20"/>
+        <location filename="../transactiondesc.cpp" line="+24"/>
         <source>Open until %1</source>
         <translation>在 %1 前未定</translation>
     </message>
     <message>
         <location line="+6"/>
+        <source>conflicted</source>
+        <translation>已確認</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>%1/offline</source>
         <translation>%1/離線中</translation>
     </message>
@@ -1688,7 +2194,9 @@ Address: %4
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, 已公告至 %n 個節點</numerusform></translation>
+        <translation>
+            <numerusform>, 已公告至 %n 個節點</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1734,14 +2242,16 @@ Address: %4
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
-        <location line="+30"/>
+        <location line="+32"/>
         <source>Credit</source>
         <translation>入帳</translation>
     </message>
     <message numerus="yes">
-        <location line="-102"/>
+        <location line="-104"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>將在 %n 個區塊產出後熟成</numerusform></translation>
+        <translation>
+            <numerusform>將在 %n 個區塊產出後熟成</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1752,12 +2262,12 @@ Address: %4
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
-        <location line="+30"/>
+        <location line="+32"/>
         <source>Debit</source>
         <translation>出帳</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-41"/>
         <source>Transaction fee</source>
         <translation>交易手續費</translation>
     </message>
@@ -1775,6 +2285,11 @@ Address: %4
         <location line="+2"/>
         <source>Comment</source>
         <translation>附註</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transaction comment</source>
+        <translation>交易備註</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1817,17 +2332,19 @@ Address: %4
         <translation>否</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-211"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, 尚未成功公告出去</translation>
     </message>
     <message numerus="yes">
-        <location line="-35"/>
+        <location line="-37"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>在接下來 %n 個區塊產出前未定</numerusform></translation>
+        <translation>
+            <numerusform>在接下來 %n 個區塊產出前未定</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+70"/>
+        <location line="+72"/>
         <source>unknown</source>
         <translation>未知</translation>
     </message>
@@ -1848,7 +2365,7 @@ Address: %4
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+225"/>
+        <location filename="../transactiontablemodel.cpp" line="+230"/>
         <source>Date</source>
         <translation>日期</translation>
     </message>
@@ -1867,10 +2384,17 @@ Address: %4
         <source>Amount</source>
         <translation>金額</translation>
     </message>
+    <message>
+        <location line="+0"/>
+        <source>Transaction comment</source>
+        <translation>交易備註</translation>
+    </message>
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>在接下來 %n 個區塊產出前未定</numerusform></translation>
+        <translation>
+            <numerusform>在接下來 %n 個區塊產出前未定</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1895,7 +2419,9 @@ Address: %4
     <message numerus="yes">
         <location line="+8"/>
         <source>Mined balance will be available when it matures in %n more block(s)</source>
-        <translation><numerusform>開採金額將可在 %n 個區塊熟成後可用</numerusform></translation>
+        <translation>
+            <numerusform>開採金額將可在 %n 個區塊熟成後可用</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1934,11 +2460,12 @@ Address: %4
     </message>
     <message>
         <location line="+38"/>
+        <location line="+27"/>
         <source>(n/a)</source>
         <translation>(不適用)</translation>
     </message>
     <message>
-        <location line="+199"/>
+        <location line="+207"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>交易狀態. 移動游標至欄位上方來顯示確認次數.</translation>
     </message>
@@ -1962,11 +2489,16 @@ Address: %4
         <source>Amount removed from or added to balance.</source>
         <translation>減去或加入至餘額的金額</translation>
     </message>
+    <message>
+        <location line="+2"/>
+        <source>Transaction comment.</source>
+        <translation>交易備註</translation>
+    </message>
 </context>
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+52"/>
+        <location filename="../transactionview.cpp" line="+56"/>
         <location line="+16"/>
         <source>All</source>
         <translation>全部</translation>
@@ -2067,7 +2599,7 @@ Address: %4
         <translation>顯示交易明細</translation>
     </message>
     <message>
-        <location line="+139"/>
+        <location line="+144"/>
         <source>Export Transaction Data</source>
         <translation>匯出交易資料</translation>
     </message>
@@ -2133,9 +2665,17 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>WalletFrame</name>
+    <message>
+        <location filename="../walletframe.cpp" line="+27"/>
+        <source>No wallet has been loaded.</source>
+        <translation>沒有被載入的錢包.</translation>
+    </message>
+</context>
+<context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+193"/>
+        <location filename="../walletmodel.cpp" line="+213"/>
         <source>Send Coins</source>
         <translation>付錢</translation>
     </message>
@@ -2143,9 +2683,9 @@ Address: %4
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+42"/>
+        <location filename="../walletview.cpp" line="+44"/>
         <source>&amp;Export</source>
-        <translation>匯出</translation>
+        <translation>&amp;匯出</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2153,7 +2693,7 @@ Address: %4
         <translation>將目前分頁的資料匯出存成檔案</translation>
     </message>
     <message>
-        <location line="+193"/>
+        <location line="+199"/>
         <source>Backup Wallet</source>
         <translation>錢包備份</translation>
     </message>
@@ -2188,7 +2728,7 @@ Address: %4
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>EarthCoin version</source>
-        <translation>莱特幣版本</translation>
+        <translation>地球幣版本</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2216,7 +2756,7 @@ Address: %4
     <message>
         <location line="+24"/>
         <source>Options:</source>
-        <translation>選項:
+        <translation>選項：
 </translation>
     </message>
     <message>
@@ -2343,7 +2883,7 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. EarthCoin is probably already running.</source>
-        <translation>無法鎖定資料目錄 %s. 也許莱特幣已經在執行了.</translation>
+        <translation>無法鎖定資料目錄 %s. 也許地球幣已經在執行了.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2388,7 +2928,7 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EarthCoin will not work properly.</source>
-        <translation>警告: 請檢查電腦時間與日期是否正確! 莱特幣無法在時鐘不準的情況下正常運作.</translation>
+        <translation>警告: 請檢查電腦時間與日期是否正確! 地球幣無法在時鐘不準的情況下正常運作.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2508,7 +3048,7 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>寫入莱特幣資料庫失敗</translation>
+        <translation>寫入幣資料庫失敗</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2528,7 +3068,7 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
-        <translation>生產莱特幣 (預設值: 0)</translation>
+        <translation>產生幣(默認:0)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2566,7 +3106,12 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
         <translation>驗證錢包資料中...</translation>
     </message>
     <message>
-        <location line="-69"/>
+        <location line="+4"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>改變 -txindex 參數後, 必須要用 -reindex 參數來重建資料庫</translation>
+    </message>
+    <message>
+        <location line="-73"/>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>從其它來源的 blk000??.dat 檔匯入區塊</translation>
     </message>
@@ -2731,12 +3276,11 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
         <translation>警告: 這個版本已經被淘汰掉了, 必須要升級!</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>You need to rebuild the databases using -reindex to change -txindex</source>
-        <translation>改變 -txindex 參數後, 必須要用 -reindex 參數來重建資料庫</translation>
+        <translation type="obsolete">改變 -txindex 參數後, 必須要用 -reindex 參數來重建資料庫</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>錢包檔 weallet.dat 壞掉了, 拯救失敗</translation>
     </message>
@@ -2840,7 +3384,7 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart EarthCoin to complete</source>
-        <translation>錢包需要重寫: 請重啟莱特幣來完成</translation>
+        <translation>錢包需要重寫: 請重啟地球幣來完成</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2900,7 +3444,7 @@ alertnotify=echo %%s | mail -s &quot;EarthCoin Alert&quot; admin@foo.com
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. EarthCoin is probably already running.</source>
-        <translation>無法和這台電腦上的 %s 繫結. 也許莱特幣已經在執行了.</translation>
+        <translation>無法和這台電腦上的 %s 繫結. 也許地球幣已經在執行了.</translation>
     </message>
     <message>
         <location line="+64"/>
@@ -2953,3 +3497,4 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
 </context>
 </TS>
+
