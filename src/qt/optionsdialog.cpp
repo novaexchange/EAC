@@ -51,6 +51,8 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
 #ifdef Q_OS_MAC
     /* remove Window tab on Mac */
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
+    /* define minimum width of tabs on Mac */
+    ui->tabWidget->setStyleSheet("QTabBar::tab { min-width: 70px; }");
 #endif
 
     /* Display elements init */
