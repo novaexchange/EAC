@@ -9,13 +9,13 @@ EarthCoin
   - Upgrade qt, miniupnpc, zlib, libpng, qrencode
   - Transaction malleability mitigation
   - Coin Control Feature
-- Checkpoints up to block 153,000
+- Checkpoints up to block 191,000 (May 18, 2014)
 - Enable QR code generation
 - Setup a working testnet
 - Add alert keys to enable network alerts
-- Add DNS seed nodes
+- Add DNS seed nodes as well as permanent nodes
 - Add IP addresses of reliable nodes to source code
-- Make true release builds
+- Make true release builds:
   - installer for windows releases
   - DMG for Mac releases
   - 32-bit and 64-bit binaries for linux releases
