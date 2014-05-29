@@ -223,14 +223,13 @@
          <property name="minimumSize">
           <size>
            <width>180</width>
-           <height>195</height>
+           <height>215</height>
           </size>
          </property>
          <property name="styleSheet">
           <string notr="true">background-image: url(:/images/res/images/logo.png);
 background-position: left bottom;
-background-repeat: none;
-background-size: contain;</string>
+background-repeat: none;</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::NoFrame</enum>
@@ -246,6 +245,9 @@ background-size: contain;</string>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="frameShape">
           <enum>QFrame::NoFrame</enum>
          </property>
