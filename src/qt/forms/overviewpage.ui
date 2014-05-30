@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>573</width>
-    <height>342</height>
+    <width>610</width>
+    <height>593</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">OverviewPage{background-image: url(:/images/res/images/logo.png);}</string>
   </property>
   <layout class="QVBoxLayout" name="topLayout">
    <item>
@@ -31,13 +34,19 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QFrame" name="frame">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
@@ -186,11 +195,18 @@
             </item>
            </layout>
           </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer">
+        <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -202,14 +218,38 @@
          </property>
         </spacer>
        </item>
+       <item>
+        <widget class="QFrame" name="logo">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/images/res/images/logo.png);
+background-position: left bottom;
+background-repeat: none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+          <enum>QFrame::NoFrame</enum>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
@@ -277,22 +317,29 @@
          </layout>
         </widget>
        </item>
-       <item>
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
     </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="urls">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/res/images/urls.png);
+background-repeat:no-repeat;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

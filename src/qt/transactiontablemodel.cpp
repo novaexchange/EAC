@@ -408,18 +408,24 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord *wtx, b
 
 QString TransactionTableModel::formatTxComment(const TransactionRecord *wtx, bool tooltip) const
 {
+    QString strTxComment = QString::fromStdString(wtx->txcomment);
+    if (strTxComment.startsWith("text:"))
+    {
+      strTxComment = strTxComment.right(strTxComment.length() - 5);
+    }
+
     switch(wtx->type)
     {
     case TransactionRecord::RecvFromOther:
-        return QString::fromStdString(wtx->txcomment);
+        return strTxComment;
     case TransactionRecord::RecvWithAddress:
-        return QString::fromStdString(wtx->txcomment);
+        return strTxComment;
     case TransactionRecord::SendToAddress:
-        return QString::fromStdString(wtx->txcomment);
+        return strTxComment;
     case TransactionRecord::SendToOther:
-        return QString::fromStdString(wtx->txcomment);
+        return strTxComment;
     case TransactionRecord::SendToSelf:
-        return QString::fromStdString(wtx->txcomment);
+        return strTxComment;
     case TransactionRecord::Generated:
          return "";
       default:

@@ -1,3 +1,29 @@
+EarthCoin
+=============
+
+1.3.0 changes
+=============
+- Forked off Litecoin Release 0.8.7.1
+  - Includes lots of bugfixes compared to 0.6 based release
+  - Upgrade to openssl-1.0.1g for CVE-2014-0160
+  - Upgrade qt, miniupnpc, zlib, libpng, qrencode
+  - Transaction malleability mitigation
+  - Coin Control Feature
+- Checkpoints up to block 191,000 (May 18, 2014)
+- Enable QR code generation
+- Setup a working testnet
+- Add alert keys to enable network alerts
+- Add DNS seed nodes as well as permanent nodes
+- Add IP addresses of reliable nodes to source code
+- Make true release builds:
+  - installer for windows releases
+  - DMG for Mac releases
+  - 32-bit and 64-bit binaries for linux releases
+- Fix several inconsistency in the old client
+
+Litecoin
+=============
+
 0.8.7.1 changes
 =============
 - Mac and Windows Official Gitian Builds: upgrade to openssl-1.0.1g for CVE-2014-0160
