@@ -1,6 +1,9 @@
 EarthCoin
 =============
 
+1.4.0 changes
+=============
+
 1.3.0 changes
 =============
 - Forked off Litecoin Release 0.8.7.1
