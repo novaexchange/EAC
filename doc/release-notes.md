@@ -4,6 +4,11 @@ EarthCoin
 1.4.0 changes
 =============
 
+1.3.1 changes
+=============
+
+- Upgrade to openssl-1.0.1h for CVE-2014-0224
+
 1.3.0 changes
 =============
 - Forked off Litecoin Release 0.8.7.1
