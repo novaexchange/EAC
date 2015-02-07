@@ -59,11 +59,20 @@ namespace Checkpoints
         (301000, uint256("0xc557d7363393148a630a3fda46ca380a202fe82fa594c5e57f88fbece755bb05"))
         (324000, uint256("0x8f6cb33fd75e327eb1a1d90b13ba2124e077b4cc5240bc7ec8039aee8a345e85"))
         (347000, uint256("0xf4bd9894306981ca4c20cdbf0bbd9e9832696701f5b3d3a840d026b893db7337"))
+        (383000, uint256("0xd902cf21480851c35844b0744ea72c1bc2d9318e87a7de63a5e3e3854331a39c"))
+        (401000, uint256("0xe43417eb3b583fd28dfbfb38c65763d990b4c370066ac615a08c4c5c3910ebc9"))
+        (420000, uint256("0x76e0de5adb117e12e85beb264c45e768e47d1720d72a49a24daab57493e07a04"))
+        (440000, uint256("0xbbc6051554e936d0a18adddb95064b16a001ce164d061fb399f26416ce7860f9"))
+        (461000, uint256("0xa60d67991b4963efee5b102c281755afde28803b9bc0b647f0cbc2120b35185b"))
+        (480000, uint256("0xd88e6f5e77a8cb4bcb883168f357a94db31203f1977a15d90b6f6d4c2edebbbb"))
+        (500000, uint256("0xa2989da9f8e785f7040c2e2dfc0177babbf736cfad9f2b401656fea4c3c7c9db"))
+        (510000, uint256("0x7646ee1a99843f1e303d85e14c58dbf2bd65b393b273b379de14534743111b72"))
+        (520000, uint256("0x114f6c2065ad5e668b901dd5ed5e9d302d6153f8e38381fbfd44485d7d499e10"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1412502305, // * UNIX timestamp of last checkpoint block
-        1145236,    // * total number of transactions between genesis and last checkpoint
+        1423261548, // * UNIX timestamp of last checkpoint block
+        1422776,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         7200.0     // * estimated number of transactions per day after checkpoint
     };
@@ -74,11 +83,13 @@ namespace Checkpoints
         (   610, uint256("0x26c53c6df7d16be2596ef3eaf11c7281b05061d76b8b146413d4899e33ff5e3a"))
         (  1400, uint256("0x3fc44fd682e0b5f338ca2dc8df8de9b4a72806906338a8c553b3f63f728e2930"))
         ( 15560, uint256("0x0e9b2f7a43065cdf3b505b72d22520d0d261cc53346f10821c9b8ac88c1733b7"))
+        ( 32000, uint256("0x01a7ebef1672ba5d4562d3cde51503f6ad1cdd7af6b8004f3b105220b3e7b9ef"))
+        ( 33000, uint256("0x356527f8441aaf6218a89b5d8e7ba737ffa1861cf71d5cbb7ee6aee66144c52e"))
         ;
     static const CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1412262041,
-        16354,
+        1422927501,
+        34179,
         100
     };
 
