@@ -4,6 +4,11 @@ EarthCoin
 1.4.0 changes
 =============
 
+1.3.3 changes
+=============
+
+- Update checkpoints as of February 07, 2015 (Block 520,000)
+
 1.3.2 changes
 =============
 
