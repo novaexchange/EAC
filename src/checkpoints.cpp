@@ -69,11 +69,17 @@ namespace Checkpoints
         (510000, uint256("0x7646ee1a99843f1e303d85e14c58dbf2bd65b393b273b379de14534743111b72"))
         (520000, uint256("0x114f6c2065ad5e668b901dd5ed5e9d302d6153f8e38381fbfd44485d7d499e10"))
         (540000, uint256("0xd7480699ff87574bfad0038b8697f9bc4df5f0cba31058a637eefbc94e402761"))
+        ( 600000, uint256("0x85ac8dbbba7a870a45740677be5f35114cb3b70f56d1c93cc2aaf415629037e7"))
+        ( 700000, uint256("0x450af2f828cdfb29be40d644d39a0858b29fe05b556946db31a7c365cffed705"))
+        ( 800001, uint256("0xa6d915a25e905d1329e482aac91228b168de6e6efb3838df16c21c3ac3a82ea2"))
+        ( 900000, uint256("0x7854a46edbdc4311006a9fd27ae601bb1ebd22fc5e8d6f1757e15237080a545b"))
+        (1000000, uint256("0xec070022a4fe9b450e02edd08c6ed355047bc8e65ef05e881b51c212d7c0fe95"))
+        (1010001, uint256("0xa2cb82b4ae04854108b18c502f1b33e18c6f69b9d4407e8aa205a23242cd4daf"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1424485440, // * UNIX timestamp of last checkpoint block
-        1461300,    // * total number of transactions between genesis and last checkpoint
+        1455834679, // * UNIX timestamp of last checkpoint block
+        2140685,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         7200.0     // * estimated number of transactions per day after checkpoint
     };
@@ -86,11 +92,12 @@ namespace Checkpoints
         ( 15560, uint256("0x0e9b2f7a43065cdf3b505b72d22520d0d261cc53346f10821c9b8ac88c1733b7"))
         ( 32000, uint256("0x01a7ebef1672ba5d4562d3cde51503f6ad1cdd7af6b8004f3b105220b3e7b9ef"))
         ( 33000, uint256("0x356527f8441aaf6218a89b5d8e7ba737ffa1861cf71d5cbb7ee6aee66144c52e"))
+        ( 40000, uint256("0x5333431da95d8417da7572328d487546313709c67f08f4135db7ce99b51655ae"))
         ;
     static const CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1422927501,
-        34179,
+        1454963888,
+        41211,
         100
     };
 
